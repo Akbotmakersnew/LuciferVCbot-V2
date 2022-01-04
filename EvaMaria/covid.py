@@ -7,11 +7,12 @@
 import random
 
 import requests
-from EvaMaria import Config
-from EvaMaria.Config_Vars.H_Vars import API, BUTTONS
 from pyrogram import Client as EvaMaria
 from pyrogram import filters
 from requests.utils import requote_uri
+
+from EvaMaria import Config
+from EvaMaria.Config_Vars.H_Vars import API, BUTTONS
 
 
 @EvaMaria.on_message(filters.command("covid"))
