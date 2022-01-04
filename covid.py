@@ -2,15 +2,18 @@
 # (s) @Ak_Bot_SupportGroup , @Ls_Supportz
 # Copyright permission under MIT License
 # All rights reserved by PR0FESS0R-99
-# License -> https://github.com/PR0FESS0R-99/DonLee-Robot-V2/blob/Professor-99/LICENSE
+# License ->
+# https://github.com/PR0FESS0R-99/DonLee-Robot-V2/blob/Professor-99/LICENSE
 
-import os
-import requests
 import random
-from requests.utils import requote_uri
-from pyrogram import filters, Client as DonLee_Robot_V2
+
+import requests
+from DonLee_Robot_V2 import Config
 from DonLee_Robot_V2.Config_Vars.H_Vars import API, BUTTONS
-from DonLee_Robot_V2 import Config, Import 
+from pyrogram import Client as DonLee_Robot_V2
+from pyrogram import filters
+from requests.utils import requote_uri
+
 
 @DonLee_Robot_V2.on_message(filters.command("covid"))
 async def reply_info(client, message):
@@ -19,7 +22,7 @@ async def reply_info(client, message):
         photo=random.choice(Config.PHOTO),
         caption=covid_info(query),
         quote=True,
-        reply_markup=BUTTONS
+        reply_markup=BUTTONS,
     )
 
 
@@ -27,15 +30,15 @@ def covid_info(country_name):
     try:
         r = requests.get(API + requote_uri(country_name.lower()))
         info = r.json()
-        country = info['country'].capitalize()
-        active = info['active']
-        confirmed = info['confirmed']
-        deaths = info['deaths']
-        info_id = info['id']
-        last_update = info['last_update']
-        latitude = info['latitude']
-        longitude = info['longitude']
-        recovered = info['recovered']
+        country = info["country"].capitalize()
+        active = info["active"]
+        confirmed = info["confirmed"]
+        deaths = info["deaths"]
+        info_id = info["id"]
+        last_update = info["last_update"]
+        latitude = info["latitude"]
+        longitude = info["longitude"]
+        recovered = info["recovered"]
         covid_info = f"""<b>Covid 19 Information</b>
 𝖢𝗈𝗎𝗇𝗍𝗋𝗒 : {country}
 𝖠𝖼𝗍𝗂𝗏𝖾𝖽 : {active}
