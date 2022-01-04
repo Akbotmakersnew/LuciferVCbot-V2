@@ -4,13 +4,16 @@
 # All rights reserved by PR0FESS0R-99
 # License -> https://github.com/PR0FESS0R-99/DonLee-Robot-V2/blob/Professor-99/LICENSE
 
-import os
-import requests
 import random
+
+import requests
+from pyrogram import Client as EvaMaria
+from pyrogram import filters
 from requests.utils import requote_uri
-from pyrogram import filters, Client as EvaMaria
+
+from EvaMaria import Config
 from EvaMaria.helpers.H_Vars import API, BUTTONS
-from EvaMaria import Config, Import 
+
 
 @EvaMaria.on_message(filters.command("covid"))
 async def reply_info(client, message):
@@ -19,7 +22,7 @@ async def reply_info(client, message):
         photo=random.choice(Config.PHOTO),
         caption=covid_info(query),
         quote=True,
-        reply_markup=BUTTONS
+        reply_markup=BUTTONS,
     )
 
 
@@ -27,15 +30,15 @@ def covid_info(country_name):
     try:
         r = requests.get(API + requote_uri(country_name.lower()))
         info = r.json()
-        country = info['country'].capitalize()
-        active = info['active']
-        confirmed = info['confirmed']
-        deaths = info['deaths']
-        info_id = info['id']
-        last_update = info['last_update']
-        latitude = info['latitude']
-        longitude = info['longitude']
-        recovered = info['recovered']
+        country = info["country"].capitalize()
+        active = info["active"]
+        confirmed = info["confirmed"]
+        deaths = info["deaths"]
+        info_id = info["id"]
+        last_update = info["last_update"]
+        latitude = info["latitude"]
+        longitude = info["longitude"]
+        recovered = info["recovered"]
         covid_info = f"""<b>Covid 19 Information</b>
 𝖢𝗈𝗎𝗇𝗍𝗋𝗒 : {country}
 𝖠𝖼𝗍𝗂𝗏𝖾𝖽 : {active}
