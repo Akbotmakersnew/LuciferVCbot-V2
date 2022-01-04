@@ -7,14 +7,14 @@
 import random
 
 import requests
-from DonLee_Robot_V2 import Config
-from DonLee_Robot_V2.Config_Vars.H_Vars import API, BUTTONS
-from pyrogram import Client as DonLee_Robot_V2
+from EvaMaria import Config
+from EvaMaria.Config_Vars.H_Vars import API, BUTTONS
+from pyrogram import Client as EvaMaria
 from pyrogram import filters
 from requests.utils import requote_uri
 
 
-@DonLee_Robot_V2.on_message(filters.command("covid"))
+@EvaMaria.on_message(filters.command("covid"))
 async def reply_info(client, message):
     query = message.text.split(None, 1)[1]
     await message.reply_photo(
