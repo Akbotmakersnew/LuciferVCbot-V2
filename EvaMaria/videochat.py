@@ -151,7 +151,7 @@ async def play(client, m: Message):
                     caption=f"""
 **▶ Playing song
 🏷️ Name: [{songname}]({link})
-❤ Sᴏᴜʀᴄᴇ: [CLICK here](https://github.com/Akbotmakersnew/LuciferVCbot)
+❤ Sᴏᴜʀᴄᴇ: [CLICK here](https://github.com/Akbotmakersnew/LuciferVCbot-V2)
 🎧 Requested by: {m.from_user.mention}**
 """,
                 )
@@ -182,7 +182,7 @@ async def play(client, m: Message):
                             caption=f"""
 **#⃣ Song added▪️Position {pos}
 🏷️ Name: [{songname}]({url})
-❤ Sᴏᴜʀᴄᴇ: [CLICK HERE](https://github.com/Akbotmakersnew/LuciferVCbot)
+❤ Sᴏᴜʀᴄᴇ: [CLICK HERE](https://github.com/Akbotmakersnew/LuciferVCbot-V2)
 🎧 Requested by: {m.from_user.mention}**
 """,
                         )
@@ -203,7 +203,7 @@ async def play(client, m: Message):
                                 caption=f"""
 **▶ Start Playing Song
 🏷️ Name: [{songname}]({url})
-❤ 𝐒𝐨𝐮𝐫𝐜𝐞: [here](https://github.com/Akbotmakersnew/LuciferVCbot)
+❤ 𝐒𝐨𝐮𝐫𝐜𝐞: [here](https://github.com/Akbotmakersnew/LuciferVCbot-V2)
 🎧 Requested by: {m.from_user.mention}**
 """,
                             )
@@ -248,7 +248,7 @@ async def vplay(client, m: Message):
                     caption=f"""
 **#⃣ 𝕍𝕚𝕕𝕖𝕠 𝓐𝓭𝓭𝓮𝓭▪️Position {pos}
 🏷️ Name: [{songname}]({link})
-❤ 𝐒𝐨𝐮𝐫𝐜𝐞: [here](https://github.com/Akbotmakersnew/LuciferVCbot)
+❤ 𝐒𝐨𝐮𝐫𝐜𝐞: [here](https://github.com/Akbotmakersnew/LuciferVCbot-V2)
 🎬 Requested by: {m.from_user.mention}**
 """,
                 )
@@ -272,7 +272,7 @@ async def vplay(client, m: Message):
                     caption=f"""
 **▶ Start Playing ᐯIᗪᗴO
 🏷️ Name: [{songname}]({link})
-❤ 𝐒𝐨𝐮𝐫𝐜𝐞: [here](https://github.com/Akbotmakersnew/LuciferVCbot)
+❤ 𝐒𝐨𝐮𝐫𝐜𝐞: [here](https://github.com/Akbotmakersnew/LuciferVCbot-V2)
 🎬 𝐑𝐞𝐪𝐮𝐞𝐬𝐭𝐞𝐝 𝐛𝐲: {m.from_user.mention}**
 """,
                 )
@@ -307,7 +307,7 @@ async def vplay(client, m: Message):
                             caption=f"""
 **#⃣ 𝙑𝙞𝙙𝙚𝙤 𝘼𝙙𝙙𝙚𝙙▪️Position {pos}
 🏷️ Name: [{songname}]({url})
-❤ 𝐒𝐨𝐮𝐫𝐜𝐞: [here](https://github.com/Akbotmakersnew/LuciferVCbot)
+❤ 𝐒𝐨𝐮𝐫𝐜𝐞: [here](https://github.com/Akbotmakersnew/LuciferVCbot-V2)
 🎬 Requested by: {m.from_user.mention}**
 """,
                         )
@@ -326,7 +326,7 @@ async def vplay(client, m: Message):
                                 caption=f"""
 **▶ Start Playing Video
 🏷️ Name: [{songname}]({url})
-❤ 🅢︎🅞︎🅤︎🅡︎🅒︎🅔︎: [here](https://github.com/Akbotmakersnew/LuciferVCbot)
+❤ 🅢︎🅞︎🅤︎🅡︎🅒︎🅔︎: [here](https://github.com/Akbotmakersnew/LuciferVCbot-V2)
 🎬 Requested by: {m.from_user.mention}**
 """,
                             )
@@ -375,7 +375,7 @@ async def playfrom(client, m: Message):
                         caption=f"""
 **▶ Start Playing Songs From {chat}
 🏷️ Name: [{songname}]({link})
-❤ 𝙎𝙤𝙪𝙧𝙘𝙚: [here](https://github.com/Akbotmakersnew/LuciferVCbot)
+❤ 𝙎𝙤𝙪𝙧𝙘𝙚: [here](https://github.com/Akbotmakersnew/LuciferVCbot-V2)
 🎧 🅡︎🅔︎🅠︎🅤︎🅔︎🅢︎🅣︎🅔︎🅓︎ 🅑︎🅨︎: {m.from_user.mention}**
 """,
                     )
