@@ -7,7 +7,7 @@
 import random
 
 import requests
-from DonLee_Robot_V2 import Config
+from EvaMaria import Config
 from DonLee_Robot_V2.Config_Vars.H_Vars import API, BUTTONS
 from pyrogram import Client as DonLee_Robot_V2
 from pyrogram import filters
