@@ -5,7 +5,10 @@
 # License -> https://github.com/PR0FESS0R-99/DonLee-Robot-V2/blob/Professor-99/LICENSE
 
 from EvaMaria import Import
+
 # Covid 19-20
 API = "https://api.sumanjay.cf/covid/?country="
 # Support Buttons
-BUTTONS = Import.Markup([[Import.Button("𝖲𝗎𝗉𝗉𝗈𝗋𝗍 𝖦𝗋𝗈𝗎𝗉", url='https://t.me/Ls_Supportz')]])
+BUTTONS = Import.Markup(
+    [[Import.Button("𝖲𝗎𝗉𝗉𝗈𝗋𝗍 𝖦𝗋𝗈𝗎𝗉", url="https://t.me/Ls_Supportz")]]
+)
