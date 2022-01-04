@@ -1,5 +1,5 @@
 # corona virus stats for LuciferVCbot-V2
-from covid import Covid
+from EvaMaria.plugins import Covid.py
 
 from . import catub, covidindia, edit_delete, edit_or_reply
 
