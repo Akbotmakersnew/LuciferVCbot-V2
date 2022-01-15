@@ -1,12 +1,12 @@
 # corona virus stats for LuciferVCbot-V2
-from EvaMaria.plugins import Covid.py
+from EvaMaria.plugins import covid.py
 
-from . import catub, covidindia, edit_delete, edit_or_reply
+from . import vcub, covidindia, edit_delete, edit_or_reply
 
 plugin_category = "extra"
 
 
-@catub.cat_cmd(
+@vcub.vcub_cmd(
     pattern="covid(?:\s|$)([\s\S]*)",
     command=("covid", plugin_category),
     info={
